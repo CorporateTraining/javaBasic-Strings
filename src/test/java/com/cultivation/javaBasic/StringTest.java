@@ -137,6 +137,18 @@ class StringTest {
         // TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if(j == 0 || j == width - 1){
+                    builder.append("|");
+                }else if(i == 0 || i == height - 1){
+                    builder.append("-");
+                }else {
+                    builder.append(" ");
+                }
+            }
+            builder.append("\n");
+        }
         // --End-->
 
         final String expected =
