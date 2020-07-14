@@ -199,7 +199,7 @@ class StringTest {
 
         // TODO: Modify the following code to create new string from original String
         // <--Start
-        final String reversed = null;
+        final String reversed = new StringBuffer(original).reverse().toString();
         // --End-->
 
         assertEquals("654321", reversed);
