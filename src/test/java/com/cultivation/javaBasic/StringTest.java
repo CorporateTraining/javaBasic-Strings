@@ -99,6 +99,7 @@ class StringTest {
      * - What if the input arguments is out of range of the string?
      * - What will happen if the the starting index is greater than the ending index?
      * - What will happen if the input string is of null reference?
+     * 这三种情况都会报StringIndexOutOfBoundsException异常
      */
 
     @SuppressWarnings({"unused", "ConstantConditions"})
@@ -108,7 +109,7 @@ class StringTest {
 
         // TODO: Extract words in the sentence.
         // <--Start
-        String[] words = null;
+        String[] words = sentence.split(" ");
         // --End-->
 
         assertArrayEquals(new String[] {"This", "is", "Mike"}, words);
