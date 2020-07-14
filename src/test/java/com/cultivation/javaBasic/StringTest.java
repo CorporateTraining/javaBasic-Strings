@@ -54,8 +54,9 @@ class StringTest {
         // TODO: Please modify the following line to pass the test.
         //
         // It is really easy to pass the test. But you have to tell why.
+        // += 之后，会重新给originalString一个新的地址的字符串，这个时候用==比较地址不一样所以是false
         // <--start
-        final Optional<Boolean> areSame = Optional.empty();
+        final Optional<Boolean> areSame = Optional.of(false);
         // --end-->
 
         assertEquals("Part one. Part two.", originalString);
